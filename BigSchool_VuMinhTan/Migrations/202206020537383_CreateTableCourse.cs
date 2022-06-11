@@ -25,13 +25,13 @@ namespace BigSchool_VuMinhTan.Migrations
                         Place = c.String(nullable: false, maxLength: 255),
                         DateTime = c.DateTime(nullable: false),
                         CategoryId = c.Byte(nullable: false),
-                        Lectuerer_Id = c.String(maxLength: 128),
+                        Lecturer_Id = c.String(maxLength: 128),
                     })
                 .PrimaryKey(t => t.Id)
                 .ForeignKey("dbo.Categories", t => t.CategoryId, cascadeDelete: true)
-                .ForeignKey("dbo.AspNetUsers", t => t.Lectuerer_Id)
+                .ForeignKey("dbo.AspNetUsers", t => t.Lecturer_Id)
                 .Index(t => t.CategoryId)
-                .Index(t => t.Lectuerer_Id);
+                .Index(t => t.Lecturer_Id);
             
         }
         
