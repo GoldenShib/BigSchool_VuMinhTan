@@ -13,7 +13,7 @@ namespace BigSchool_VuMinhTan.Migrations
         
         string IMigrationMetadata.Id
         {
-            get { return "202206020538219_PopulateCategoryTable"; }
+            get { return "202206150903212_PopulateCategoryTable"; }
         }
         
         string IMigrationMetadata.Source

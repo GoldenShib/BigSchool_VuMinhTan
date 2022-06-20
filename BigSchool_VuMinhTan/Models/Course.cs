@@ -20,5 +20,6 @@ namespace BigSchool_VuMinhTan.Models
         public Category Category { get; set; }
         [Required]
         public byte CategoryId { get; set; }
+        public bool IsCanceled { get; set; }
     }
 }
